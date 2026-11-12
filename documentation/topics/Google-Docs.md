@@ -132,7 +132,7 @@ Once a document is finalized, it can be exported in several industry-standard fo
 
 ## 9. Comparison: Doxygen vs. Google Docs
 
-As covered in the lecture slides (`PPT/Doxygen.pdf`), both tools serve different but complementary roles in technical documentation:
+As covered in the lecture slides (`PPTs/Doxygen.pdf`), both tools serve different but complementary roles in technical documentation:
 
 | Feature | Doxygen | Google Docs |
 | :--- | :--- | :--- |
