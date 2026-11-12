@@ -1,0 +1,143 @@
+\doxysection{Calculation\+Engine Class Reference}
+\hypertarget{class_calculation_engine}{}\label{class_calculation_engine}\index{CalculationEngine@{CalculationEngine}}
+
+
+Performs basic mathematical operations.  
+
+
+
+
+{\ttfamily \+\#include $<$Calculation\+Engine.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_calculation_engine_a4d772264693d96efcfa89c12e585e455}{Calculation\+Engine}} (\doxymbox{\hyperlink{class_logger}{Logger}} \&log)
+\begin{DoxyCompactList}\small\item\em Creates a calculation engine. \end{DoxyCompactList}\item 
+double \doxymbox{\hyperlink{class_calculation_engine_a4fbe0da5b956e1aec668ca2961eeb4f5}{power}} (double base, double exponent) const
+\begin{DoxyCompactList}\small\item\em Calculates the power of a number. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_logger}{Logger}} \& \doxymbox{\hyperlink{class_calculation_engine_a9962b6b126f79993e341e67faa0e11dc}{logger}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Performs basic mathematical operations. 
+
+The \doxylink{class_calculation_engine}{Calculation\+Engine} class uses a \doxylink{class_logger}{Logger} object to report calculation results. It currently provides a power calculation using a base and an exponent. 
+
+Definition at line \doxymbox{\hyperlink{_calculation_engine_8h_source_l00018}{18}} of file \doxymbox{\hyperlink{_calculation_engine_8h_source}{Calculation\+Engine.\+h}}.
+
+
+
+\label{class_calculation_engine_doc-constructors}
+\Hypertarget{class_calculation_engine_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_calculation_engine_a4d772264693d96efcfa89c12e585e455}\index{CalculationEngine@{CalculationEngine}!CalculationEngine@{CalculationEngine}}
+\index{CalculationEngine@{CalculationEngine}!CalculationEngine@{CalculationEngine}}
+\doxysubsubsection{\texorpdfstring{CalculationEngine()}{CalculationEngine()}}
+{\footnotesize\ttfamily \label{class_calculation_engine_a4d772264693d96efcfa89c12e585e455} 
+Calculation\+Engine::\+\+Calculation\+Engine (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_logger}{Logger}} \&}]{log}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Creates a calculation engine. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em log} & A reference to the \doxylink{class_logger}{Logger} used by the engine. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \doxymbox{\hyperlink{_calculation_engine_8h_source_l00027}{27}} of file \doxymbox{\hyperlink{_calculation_engine_8h_source}{Calculation\+Engine.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ :\ \doxymbox{\hyperlink{class_calculation_engine_a9962b6b126f79993e341e67faa0e11dc}{logger}}(log)\ \{\}}
+
+\end{DoxyCode}
+
+
+References \doxymbox{\hyperlink{_calculation_engine_8h_source_l00020}{logger}}.
+
+
+
+\label{class_calculation_engine_doc-func-members}
+\Hypertarget{class_calculation_engine_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_calculation_engine_a4fbe0da5b956e1aec668ca2961eeb4f5}\index{CalculationEngine@{CalculationEngine}!power@{power}}
+\index{power@{power}!CalculationEngine@{CalculationEngine}}
+\doxysubsubsection{\texorpdfstring{power()}{power()}}
+{\footnotesize\ttfamily \label{class_calculation_engine_a4fbe0da5b956e1aec668ca2961eeb4f5} 
+double Calculation\+Engine::\+power (\begin{DoxyParamCaption}\item[{double}]{base}{, }\item[{double}]{exponent}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Calculates the power of a number. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em base} & The number to be raised to a power. \\
+\hline
+{\em exponent} & The exponent applied to the base. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result of base raised to exponent.
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Todo}
+\item[\doxymbox{\hyperlink{todo__todo000001}{Todo}}]Add handling for cases where the result may overflow. \end{DoxyRefDesc}
+
+
+Definition at line \doxymbox{\hyperlink{_calculation_engine_8h_source_l00037}{37}} of file \doxymbox{\hyperlink{_calculation_engine_8h_source}{Calculation\+Engine.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ result\ =\ 1.0;}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (exponent\ <\ 0)\ \{}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ -\/exponent;\ ++i)\ result\ *=\ base;}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \ \ \ \ result\ =\ 1.0\ /\ result;}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ exponent;\ ++i)\ result\ *=\ base;}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_calculation_engine_a9962b6b126f79993e341e67faa0e11dc}{logger}}.\doxymbox{\hyperlink{class_logger_ab588e2088c93df300a0bab12e82f41e7}{log}}(\doxymbox{\hyperlink{_logger_8h_aca1fd1d8935433e6ba2e3918214e07f9a551b723eafd6a31d444fcb2f5920fbd3}{LogLevel::INFO}},\ \textcolor{stringliteral}{"{}Power\ calculation\ completed."{}});}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ result;}
+\DoxyCodeLine{00047\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \doxymbox{\hyperlink{_logger_8h_source_l00017}{INFO}}, \doxymbox{\hyperlink{_logger_8h_source_l00046}{Logger::\+log()}}, and \doxymbox{\hyperlink{_calculation_engine_8h_source_l00020}{logger}}.
+
+
+
+Referenced by \doxymbox{\hyperlink{main_8cpp_source_l00020}{main()}}.
+
+
+
+\label{class_calculation_engine_doc-variable-members}
+\Hypertarget{class_calculation_engine_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_calculation_engine_a9962b6b126f79993e341e67faa0e11dc}\index{CalculationEngine@{CalculationEngine}!logger@{logger}}
+\index{logger@{logger}!CalculationEngine@{CalculationEngine}}
+\doxysubsubsection{\texorpdfstring{logger}{logger}}
+{\footnotesize\ttfamily \label{class_calculation_engine_a9962b6b126f79993e341e67faa0e11dc} 
+\doxymbox{\hyperlink{class_logger}{Logger}}\& Calculation\+Engine::\+logger\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_calculation_engine_8h_source_l00020}{20}} of file \doxymbox{\hyperlink{_calculation_engine_8h_source}{Calculation\+Engine.\+h}}.
+
+
+
+Referenced by \doxymbox{\hyperlink{_calculation_engine_8h_source_l00027}{Calculation\+Engine()}}, and \doxymbox{\hyperlink{_calculation_engine_8h_source_l00037}{power()}}.
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{_calculation_engine_8h}{Calculation\+Engine.\+h}}\end{DoxyCompactItemize}

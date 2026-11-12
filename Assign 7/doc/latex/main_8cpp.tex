@@ -1,0 +1,68 @@
+\doxysection{main.\+cpp File Reference}
+\hypertarget{main_8cpp}{}\label{main_8cpp}\index{main.cpp@{main.cpp}}
+
+
+Entry point of the calculation engine application.  
+
+
+{\ttfamily \+\#include "{}Logger.\+h"{}}\newline
+{\ttfamily \+\#include "{}Calculation\+Engine.\+h"{}}\newline
+{\ttfamily \+\#include $<$iostream$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \doxymbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em Runs the calculation engine example. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Entry point of the calculation engine application. 
+
+
+
+Definition in file \doxymbox{\hyperlink{main_8cpp_source}{main.\+cpp}}.
+
+
+
+\label{main_8cpp_doc-func-members}
+\Hypertarget{main_8cpp_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+int main (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Runs the calculation engine example. 
+
+\begin{DoxyReturn}{Returns}
+0 when the program finishes successfully. 
+\end{DoxyReturn}
+
+
+Definition at line \doxymbox{\hyperlink{main_8cpp_source_l00020}{20}} of file \doxymbox{\hyperlink{main_8cpp_source}{main.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00021\ \ \ \ \ \doxymbox{\hyperlink{class_logger}{Logger}}\ logger(\doxymbox{\hyperlink{_logger_8h_aca1fd1d8935433e6ba2e3918214e07f9a551b723eafd6a31d444fcb2f5920fbd3}{LogLevel::INFO}});}
+\DoxyCodeLine{00022\ \ \ \ \ \doxymbox{\hyperlink{class_calculation_engine}{CalculationEngine}}\ engine(logger);}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{double}\ base\ =\ 2.0;}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{double}\ exponent\ =\ 3.0;}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{double}\ result\ =\ engine.power(base,\ exponent);}
+\DoxyCodeLine{00026\ \ \ \ \ std::cout\ <<\ base\ <<\ \textcolor{stringliteral}{"{}\ raised\ to\ "{}}\ <<\ exponent}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <<\ \textcolor{stringliteral}{"{}\ =\ "{}}\ <<\ result\ <<\ std::endl;}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{00029\ \}}
+
+\end{DoxyCode}
+
+
+References \doxymbox{\hyperlink{_logger_8h_source_l00017}{INFO}}, \doxymbox{\hyperlink{main_8cpp_source_l00020}{main()}}, and \doxymbox{\hyperlink{_calculation_engine_8h_source_l00037}{Calculation\+Engine::\+power()}}.
+
+
+
+Referenced by \doxymbox{\hyperlink{main_8cpp_source_l00020}{main()}}.
+

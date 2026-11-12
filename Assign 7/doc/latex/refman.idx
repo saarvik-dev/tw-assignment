@@ -1,0 +1,31 @@
+\indexentry{Calculation Engine@{Calculation Engine}|hyperpage}{1}
+\indexentry{Todo List@{Todo List}|hyperpage}{3}
+\indexentry{CalculationEngine@{CalculationEngine}|hyperpage}{9}
+\indexentry{CalculationEngine@{CalculationEngine}!CalculationEngine@{CalculationEngine}|hyperpage}{10}
+\indexentry{CalculationEngine@{CalculationEngine}!CalculationEngine@{CalculationEngine}|hyperpage}{10}
+\indexentry{CalculationEngine@{CalculationEngine}!power@{power}|hyperpage}{10}
+\indexentry{power@{power}!CalculationEngine@{CalculationEngine}|hyperpage}{10}
+\indexentry{CalculationEngine@{CalculationEngine}!logger@{logger}|hyperpage}{11}
+\indexentry{logger@{logger}!CalculationEngine@{CalculationEngine}|hyperpage}{11}
+\indexentry{Logger@{Logger}|hyperpage}{11}
+\indexentry{Logger@{Logger}!Logger@{Logger}|hyperpage}{12}
+\indexentry{Logger@{Logger}!Logger@{Logger}|hyperpage}{12}
+\indexentry{Logger@{Logger}!log@{log}|hyperpage}{12}
+\indexentry{log@{log}!Logger@{Logger}|hyperpage}{12}
+\indexentry{Logger@{Logger}!minimumLevel@{minimumLevel}|hyperpage}{12}
+\indexentry{minimumLevel@{minimumLevel}!Logger@{Logger}|hyperpage}{12}
+\indexentry{CalculationEngine.h@{CalculationEngine.h}|hyperpage}{13}
+\indexentry{Logger.h@{Logger.h}|hyperpage}{14}
+\indexentry{Logger.h@{Logger.h}!LogLevel@{LogLevel}|hyperpage}{14}
+\indexentry{LogLevel@{LogLevel}!Logger.h@{Logger.h}|hyperpage}{14}
+\indexentry{DEBUG@{DEBUG}!Logger.h@{Logger.h}|hyperpage}{14}
+\indexentry{Logger.h@{Logger.h}!DEBUG@{DEBUG}|hyperpage}{14}
+\indexentry{INFO@{INFO}!Logger.h@{Logger.h}|hyperpage}{14}
+\indexentry{Logger.h@{Logger.h}!INFO@{INFO}|hyperpage}{14}
+\indexentry{WARNING@{WARNING}!Logger.h@{Logger.h}|hyperpage}{14}
+\indexentry{Logger.h@{Logger.h}!WARNING@{WARNING}|hyperpage}{14}
+\indexentry{ERROR@{ERROR}!Logger.h@{Logger.h}|hyperpage}{14}
+\indexentry{Logger.h@{Logger.h}!ERROR@{ERROR}|hyperpage}{14}
+\indexentry{main.cpp@{main.cpp}|hyperpage}{15}
+\indexentry{main.cpp@{main.cpp}!main@{main}|hyperpage}{16}
+\indexentry{main@{main}!main.cpp@{main.cpp}|hyperpage}{16}
