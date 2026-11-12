@@ -1,0 +1,183 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{fontspec}
+\usepackage{xcolor}
+\usepackage{geometry}
+\usepackage{makeidx}
+\usepackage{biblatex}
+
+\geometry{
+	margin=1in
+}
+
+\setmainfont{DejaVu Serif}
+\setsansfont{DejaVu Sans}
+\setmonofont{Courier New}
+
+\definecolor{pagebg}{RGB}{255,242,230}
+\pagecolor{pagebg}
+
+\addbibresource{references.bib}
+
+\makeindex
+
+\renewcommand{\thesection}{\Alph{section}}
+
+\newsavebox{\messagebox}
+
+\begin{document}
+	
+	\begin{center}
+		{\Large\textbf{Assignment 6 - Document Structure}}
+		
+		\vspace{0.3cm}
+		
+		TW Lab 2025
+	\end{center}
+	
+	\vspace{1cm}
+	
+	\begin{center}
+		Write \LaTeX{} code to output the following sections.
+		Also follow any instructions provided in the document.
+		Use \LaTeX{} reference and appropriate packages
+		wherever required.
+	\end{center}
+	
+	
+	\section{Fonts and background}
+	
+	Try to match the page background color. Then create the
+	following trivlist:
+	
+	\begin{trivlist}
+		
+		\item This text is written in DejaVu Serif, the main font.
+		
+		\item {\sffamily This text is written in DejaVu Sans,
+			the sans-serif font.}
+		
+		\item {\ttfamily This text is written in Courier,
+			the monospace font.}
+		
+	\end{trivlist}
+	
+	Use the package \texttt{fontspec} and make sure that you
+	configure TeXstudio to use XeLaTeX as the default compiler.
+	
+	
+	\section{Spacing}
+	
+	This is the first line of a paragraph.\\
+	This is another line, but not another paragraph.
+	
+	\vspace{1cm}
+	
+	This paragraph starts 1cm below. Now, observe both the
+	paragraphs given below and how they differ in hyphenation:
+	
+	\begin{quote}
+		$>$ This is another paragraph. Incomprehensibilities
+		and antidis-establishmentarianisms are two long words.
+	\end{quote}
+	
+	\begin{quote}
+		$>$ This is another paragraph.
+		Incomprehensibilities and antidisestablishmentarianisms
+		are two long words.
+	\end{quote}
+	
+	Recreate the paragraphs above and then continue from
+	next page, leaving space for section C.
+	
+	\index{background}
+	
+	\stepcounter{section}
+	
+	\newpage
+	
+	
+	\section{Numbering}
+	
+	Ensure that all sections are numbered using alphabets.
+	
+	\[
+	x^2+y^2=1
+	\tag{1}
+	\]
+	
+	Equation \ref{eq:circle} denotes a circle. Now add the
+	equation of an ellipse before the equation of the circle.
+	
+	\begin{equation}
+		\frac{x^2}{a^2}+\frac{y^2}{b^2}=1
+		\label{eq:ellipse}
+	\end{equation}
+	
+	\begin{equation}
+		x^2+y^2=1
+		\label{eq:circle}
+	\end{equation}
+	
+	Equation \ref{eq:ellipse} denotes an ellipse and
+	Equation \ref{eq:circle} denotes a circle.
+	
+	\index{numbering}
+	
+	
+	\section{Boxes and Lines}
+	
+	\savebox{\messagebox}{
+		This message is written in a savebox.
+	}
+	
+	\usebox{\messagebox}
+	
+	\usebox{\messagebox}
+	
+	\usebox{\messagebox}
+	
+	\vspace{0.5cm}
+	
+	\parbox{5cm}{
+		This message is wrapped in a 5cm paragraph box.
+	}
+	
+	\vspace{0.3cm}
+	
+	\noindent
+	\rule{0.5em}{1em}
+	
+	\vspace{0.1cm}
+	
+	\noindent
+	\fbox{
+		Note that these boxes are used for highlighting
+		and layout design.
+	}
+	
+	\index{savebox}
+	
+	\vspace{0.5cm}
+	
+	Create an index of some relevant terms from this document.
+	Also add the bibliography [2] as shown in the following
+	pages. Add the missing entry to the Latex-in-short book
+	[1], in the bib file attached and cite it appropriately.
+	Carefully understand how index file and bib files are
+	compiled.
+	
+	I used the short introduction to \LaTeX{} as a reference
+	while preparing this document \cite{lshort}. Information
+	about bibliography management was also referred to
+	\cite{overleaf}.
+	
+	\clearpage
+	
+	\printindex
+	
+	\clearpage
+	
+	\printbibliography[title={References}]
+	
+\end{document}

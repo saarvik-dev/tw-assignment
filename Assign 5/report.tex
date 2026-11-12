@@ -1,0 +1,188 @@
+\documentclass[12pt,a4paper]{report}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{xcolor}
+\usepackage{sectsty}
+\usepackage{fancyhdr}
+
+\title{Introduction to LaTeX}
+\author{Saarvik Singh Suryavanshi}
+\date{}
+
+\chapterfont{\color{red}\bfseries\Huge}
+\sectionfont{\color{magenta}\itshape\Large}
+\subsectionfont{\color{orange}\bfseries}
+
+\pagestyle{fancy}
+\fancyhf{}
+
+\fancyhead[L]{Saarvik Singh Suryavanshi}
+\fancyhead[R]{Technical Writing}
+
+\fancyfoot[C]{\thepage}
+
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\fancypagestyle{plain}{
+	\fancyhf{}
+	\fancyhead[L]{Saarvik Singh Suryavanshi}
+	\fancyhead[R]{Technical Writing}
+	\fancyfoot[C]{\thepage}
+	\renewcommand{\headrulewidth}{0.4pt}
+	\renewcommand{\footrulewidth}{0.4pt}
+}
+
+\begin{document}
+	
+	\begin{titlepage}
+		\thispagestyle{empty}
+		
+		\centering
+		
+		\vspace*{3cm}
+		
+		{\Huge\bfseries Introduction to LaTeX\par}
+		
+		\vspace{2cm}
+		
+		{\Large Saarvik Singh Suryavanshi\par}
+		
+		\vspace{0.5cm}
+		
+		2025UCP1681
+		
+		\vspace{1.5cm}
+		
+		\textbf{Course:} Technical Writing
+		
+		\vspace{0.5cm}
+		
+		\textbf{Course Coordinator:} Neeta Nain
+		
+		\vfill
+		
+		{\large \par}
+		
+	\end{titlepage}
+	
+	\pagestyle{fancy}
+	
+	\begin{abstract}
+		
+		This report introduces LaTeX and explains how it can be
+		used to prepare well-formatted documents. It covers the
+		basic document structure, commonly used commands,
+		mathematical expressions, and the use of tables and figures.
+		The aim is to understand the basic features of LaTeX and
+		how they help in preparing academic documents.
+		
+	\end{abstract}
+	
+	\section{Introduction}
+	
+	LaTeX is a document preparation system commonly used for
+	writing academic papers, reports, and technical documents.
+	It is especially useful when a document contains
+	mathematical expressions, tables, references, or figures.
+	
+	Unlike a normal word processor, LaTeX uses commands to
+	describe the structure and formatting of a document.
+	This makes it easier to maintain consistent formatting
+	throughout a document.
+	
+	\chapter{Introduction to LaTeX}
+	
+	\section{What is LaTeX?}
+	
+	LaTeX is built on the TeX typesetting system. It allows
+	users to focus on the content while the system handles
+	most of the formatting.
+	
+	Some common uses of LaTeX are:
+	
+	\begin{itemize}
+		\item Writing technical and research papers.
+		\item Preparing project reports and assignments.
+		\item Creating documents with mathematical equations.
+		\item Preparing presentations.
+	\end{itemize}
+	
+	\section{Advantages of LaTeX}
+	
+	LaTeX provides several useful features:
+	
+	\begin{itemize}
+		\item Consistent formatting throughout the document.
+		\item Good support for mathematical equations.
+		\item Automatic numbering of sections, tables, and figures.
+		\item Easy management of references and citations.
+	\end{itemize}
+	
+	\chapter{Basic Document Structure}
+	
+	\section{Document Class}
+	
+	Every LaTeX document begins with the
+	\texttt{\textbackslash documentclass} command.
+	
+	It specifies the type of document being prepared.
+	Some commonly used document classes are:
+	
+	\begin{itemize}
+		\item article
+		\item report
+		\item book
+		\item beamer
+	\end{itemize}
+	
+	\section{Basic Commands}
+	
+	A LaTeX document generally contains a preamble and
+	a document environment.
+	
+	The preamble contains the document class and packages.
+	The actual content is written between
+	\texttt{\textbackslash begin\{document\}} and
+	\texttt{\textbackslash end\{document\}}.
+	
+	\subsection{Sections and Subsections}
+	
+	Sections are used to divide a document into smaller
+	parts. Subsections help organize the content further.
+	
+	\chapter{Mathematics, Tables and Figures}
+	
+	\section{Mathematical Expressions}
+	
+	LaTeX is useful for writing mathematical expressions.
+	For example, the quadratic formula can be written as:
+	
+	\[
+	x = \frac{-b \pm \sqrt{b^2-4ac}}{2a}
+	\]
+	
+	Equations can also be numbered and referenced in
+	a document.
+	
+	\section{Tables and Figures}
+	
+	Tables are used to present information in rows and
+	columns. Figures can be used to include images,
+	graphs, and diagrams.
+	
+	Both can be given captions and labels, which make
+	them easier to identify and reference in a report.
+	
+	\chapter{Conclusion}
+	
+	LaTeX is a useful tool for preparing academic and
+	technical documents. Its structured approach makes
+	formatting easier to manage, especially in longer
+	documents.
+	
+	Learning its basic commands, environments, and
+	packages provides a good starting point for creating
+	well-organized reports and presentations.
+	
+\end{document}
