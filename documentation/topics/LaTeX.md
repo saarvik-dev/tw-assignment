@@ -426,3 +426,4 @@ pdflatex document.tex
    makeindex document.idx
    pdflatex document.tex
    ```
+

@@ -229,3 +229,4 @@ pdflatex beamer.tex
 pdflatex beamer.tex
 ```
 Running `pdflatex` twice resolves the total slide count (`\inserttotalframenumber`) and any section references. The output file `beamer.pdf` is directly opened in a PDF viewer and presented in full screen.
+
