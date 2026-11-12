@@ -1,0 +1,16 @@
+\begin{thebibliography}{2}
+\providecommand{\natexlab}[1]{#1}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem[{\textit{Einstein}(1905)}]{einstein1905}
+Einstein, A., Does the inertia of a body depend upon its energy content?,
+  \textit{Annalen der Physik}, \textit{18}, 639--641, 1905.
+
+\bibitem[{\textit{Schrodinger}(1926)}]{schrodinger1926}
+Schrodinger, E., Quantisierung als eigenwertproblem, \textit{Annalen der
+  Physik}, \textit{384}(4), 361--376, 1926.
+
+\end{thebibliography}

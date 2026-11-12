@@ -1,0 +1,42 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{natbib}
+
+\title{Technical Writing Assignment 1}
+\author{Saarvik Singh Suryavanshi\\2025UCP1681\\Batch A3}
+\date{}
+\begin{document}
+
+\maketitle
+
+Hello World
+
+\tableofcontents
+
+\section{My First LaTeX Document}
+
+This is my first LaTeX document.
+
+\begin{enumerate}
+    \item First item
+\end{enumerate}
+
+\section{Science!}
+
+Einstein's famous mass-energy equivalence equation is \(E=mc^2\) \citep{einstein1905}.
+
+\section{Equations and Citations}
+
+The Schrödinger equation is given by
+\begin{equation}
+i\hbar\frac{\partial \Psi(r,t)}{\partial t}
+=
+\left[-\frac{\hbar^2}{2\mu}\nabla^2+V(r,t)\right]\Psi(r,t).
+\label{eq:schrodinger}
+\end{equation}
+
+Equation \ref{eq:schrodinger} describes the time-dependent Schrödinger equation \citep{schrodinger1926}.
+
+\bibliographystyle{agu}
+\bibliography{physics}
+
+\end{document}
